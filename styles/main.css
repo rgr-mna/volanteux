@@ -1,0 +1,278 @@
+:root {
+    --bg-color: #F7F7F7;
+    --heading-dark: #2C4468;
+    --light-text: #EEF3F6;
+    --muted-text: #8D9295;
+    --text: #102B42;
+    --white: #FFFFFF;
+    --primary: #426BFA;
+    --secondary: #AEFA5C;
+    --dark-text: #1F1F20;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url('../assets/fonts/Overpass-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../assets/fonts/Roboto-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../assets/fonts/Roboto-Medium.ttf") format("truetype");
+    font-weight: medium;
+    font-style: normal;
+}
+
+
+
+.dashicons {
+    /* display: inline-block; */
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dashicons-arrow-right-alt {
+    background-image: url('../assets/arrow-right-alt.svg');
+}
+
+.dashicons-calendar-alt {
+    background-image: url('../assets/calendar-alt.svg');
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.values__header {
+    font-family: 'Overpass', sans-serif;
+    color: var(--heading-dark);
+    font-size: 1.4rem;
+    line-height: 1em;
+    font-weight: 700;
+    letter-spacing: -0.08em;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: initial;
+}
+
+
+section {
+    padding: 24px 48px;
+
+}
+
+em {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.btn {
+    color: var(--dark-text);
+    background-color: var(--secondary);
+    padding: 16px 24px;
+    /* font-size: 1.1rem; */
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.dashicons {
+    display: block;
+}
+
+.btn .dashicons {
+    margin-left: 16px;
+}
+
+.btn.btn-lg {
+    padding: 16px 28px;
+    border-radius: 48px;
+    font-size: 1.2rem;
+}
+
+.section__intro {
+    color: var(--primary);
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.section__title {
+    margin-bottom: 38px;
+}
+
+/* hero */
+
+.hero__content> :nth-child(1) {
+    display: none;
+}
+
+.hero__content .hero__side>* {
+    margin-bottom: 38px;
+}
+
+.hero__side__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ribbon cta */
+
+.ribbon {
+    background-color: var(--primary);
+    padding: 32px 12px;
+    font-family: 'Overpass', sans-serif;
+    color: var(--white);
+    text-align: center;
+    position: relative;
+    margin-bottom: 64px;
+}
+
+.ribbon__headline {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.05em;
+    margin-bottom: 1.2rem;
+}
+
+.ribbon__subtext {
+    font-weight: 400;
+    font-size: .9rem;
+    margin-bottom: 28px;
+
+}
+
+.ribbon .btn {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    bottom: 0;
+    transform: translateX(-50%) translateY(50%);
+    border: solid 4px var(--bg-color);
+}
+
+/* values items */
+
+.values__item {
+    margin-bottom: 28px;
+}
+
+.values__header {
+    text-align: initial;
+    margin-bottom: 12px;
+}
+
+.values__content {
+    color: var(--muted-text);
+    line-height: 1.4em;
+}
+
+/* find-us */
+
+.find-us__location-item:nth-child(1) {
+    margin-bottom: 64px;
+}
+
+
+.find-us__location-header,
+.find-us__location-name,
+.event__title {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+}
+
+.find-us__location-name {
+    color: var(--heading-dark);
+    font-size: 1.2rem;
+}
+
+.find-us__location-address {
+    color: var(--muted-text);
+    margin-bottom: 12px;
+}
+
+.find-us__location-schedule {
+    color: var(--heading-dark);
+}
+
+/* events */
+
+.events__item {
+    display: flex;
+}
+
+.events__item-left {
+    flex: 1;
+}
+
+.events__registration {
+    color: var(--primary);
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-size: 1.2;
+}
+
+
+
+
+
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+    .hero {
+        /* Additional styles for larger screens */
+        display: flex;
+    }
+
+    .hero__content {
+        /* Additional styles for larger screens */
+        flex: 1;
+    }
+
+    .hero__side {
+        /* Additional styles for larger screens */
+        flex: 1;
+    }
+
+    .section {
+        padding: 64px 128px;
+
+    }
+}
