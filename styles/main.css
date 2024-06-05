@@ -6,6 +6,7 @@
     --text: #102B42;
     --white: #FFFFFF;
     --primary: #426BFA;
+    --primary-200: #EBEEFA;
     --secondary: #AEFA5C;
     --dark-text: #1F1F20;
 }
@@ -55,6 +56,10 @@
     background-image: url('../assets/calendar-alt.svg');
 }
 
+.dashicons-location {
+    background-image: url('../assets/location.svg');
+}
+
 html,
 body {
     font-family: 'Roboto', sans-serif;
@@ -85,7 +90,7 @@ h1 {
 
 
 section {
-    padding: 24px 48px;
+    padding: 24px 24px;
 
 }
 
@@ -234,23 +239,90 @@ em {
 
 /* events */
 
-.events__item {
-    display: flex;
-}
-
-.events__item-left {
-    flex: 1;
+.events__title {
+    font-family: 'Overpass', sans-serif;
+    color: var(--heading-dark);
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .events__registration {
-    color: var(--primary);
     text-transform: uppercase;
-    font-family: 'Roboto';
-    font-size: 1.2;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.events__location {
+    color: var(--heading-dark);
+}
+
+.events__icon.events__icon--location {
+    color: var(--primary);
+}
+
+.events__body {
+    color: var(--muted-text);
+}
+
+.events__btn {
+    display: block;
 }
 
 
 
+.events__date {
+    background-color: var(--primary);
+    color: white;
+    font-weight: 700;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* blog */
+
+.news__item {
+    background-color: var(--primary-200);
+    padding: 32px 16px;
+}
+
+.news__title {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    color: var(--heading-dark);
+    font-size: 1.5rem;
+}
+
+.news__meta {
+    color: var(--muted-text);
+    display: flex;
+}
+
+.news__category {
+    font-weight: 700;
+}
+
+.news__body {
+    color: var(--text);
+}
+
+.news__link, .news__all {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.news__meta {
+    margin-bottom: 8px;
+}
+
+.news__item > * {
+    margin-bottom: 16px;
+}
 
 
 

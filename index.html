@@ -139,17 +139,20 @@
         <div class="events">
             <article class="events__item">
                 <div class="events__item-left">
-                    <span class="events__icon dashicons dashicons-calendar-alt"></span>
+                    <span class="events__icon events__icon--calendar"></span>
                 </div>
                 <div class="events__item-right">
                     <header class="events__header">
-                        <p class="event__title">Tournoi de fin d’année</p>
+                        <p class="events__title">Tournoi de fin d’année</p>
                         <p class="events__registration">Sur inscription</p>
                         <div class="events__map-icon">
-                            <span class="events__icon dashicons dashicons-calendar-alt"></span>
+                            <span class="events__icon events__icon--location"></span>
                             <p class="events__location">Complexe de Seilles</p>
                         </div>
-                        <div class="events__date">24 Mai</div>
+                        <div class="events__date">
+                            <div class="events__date-digit" id="event-date-digit">24</div>
+                            <div class="events__date-month" id="event-date-month">Mai</div>
+                        </div>
                     </header>
                     <div class="events__body">
                         <p>In the eighteenth century the German philosopher Immanuel Kant developed a theory of
@@ -160,38 +163,42 @@
             </article>
             <article class="events__item">
                 <div class="events__item-left">
-                    <img src="" alt="" class="events__image">
+                    <span class="events__icon events__icon--calendar"></span>
                 </div>
                 <div class="events__item-right">
                     <header class="events__header">
-                        <p class="event__title">Tournoi de fin d’année</p>
+                        <p class="events__title">Tournoi de fin d’année</p>
                         <p class="events__registration">Sur inscription</p>
-                        <p class="events__location">
-                        <div class="events__map-icon">Complexe de Seilles</div>
-                        </p>
-                        <div class="events__date">24 Mai</div>
+                        <div class="events__map-icon">
+                            <span class="events__icon dashicons dashicons-location events__icon--location"></span>
+                            <p class="events__location">Complexe de Seilles</p>
+                        </div>
+                        <div class="events__date">
+                            <div class="events__date-digit" id="event-date-digit">24</div>
+                            <div class="events__date-month" id="event-date-month">Mai</div>
+                        </div>
                     </header>
                     <div class="events__body">
                         <p>In the eighteenth century the German philosopher Immanuel Kant developed a theory of
                             knowledge in wh</p>
                     </div>
-                    <button class="events__btn">En savoir plus</button>
+                    <button class="btn events__btn">En savoir plus</button>
                 </div>
             </article>
         </div>
         <h2 class="section__title">Nos dernières actus</h2>
         <div class="news">
-            <article class="news-item">
-                <header>
-                    <p>PV Réunions / 15.02.2024 18:32</p>
-                    <p class="title">PV réunion de 15/02/2024</p>
+            <article class="news__item">
+                <header class="news__header">
+                    <div class="news__meta"><div class="news__category">PV Réunions /</div> <div class="news__date">15.02.2024 18:32</div></div>
+                    <p class="news__title">PV réunion de 15/02/2024</p>
                 </header>
-                <div class="body">
-                    <p>On a eu plusieurs problèmes avec les salles et le matériel de badminton récemment. </p>
-                    <a href="#">Lire l’article...</a>
+                <div class="news__body">
+                    <p>On a eu plusieurs problèmes avec les salles et le matériel de badminton récemment. </p>
                 </div>
+                <a href="#" class="news__link">Lire l’article...</a>
             </article>
-            <p>Vers tout les articles</p>
+            <p class="news__all">Voir tous les articles</p>
         </div>
 
     </section>
