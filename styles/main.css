@@ -108,6 +108,7 @@ em {
     display: flex;
     align-items: center;
     white-space: nowrap;
+    justify-content: center;
 }
 
 .dashicons {
@@ -239,11 +240,51 @@ em {
 
 /* events */
 
+.events__item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    margin-bottom: 32px;
+}
+
+.events__date {
+    background-color: var(--primary-200);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.events__date {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+.events__details {
+    padding: 8px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.events__header {
+    margin-bottom: 10px;
+}
+
 .events__title {
-    font-family: 'Overpass', sans-serif;
-    color: var(--heading-dark);
     font-size: 1.5rem;
-    font-weight: 700;
+    font-family: Overpass, sans-serif;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.events__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
 }
 
 .events__registration {
@@ -253,36 +294,20 @@ em {
 }
 
 .events__location {
-    color: var(--heading-dark);
+    display: flex;
+    align-items: center;
 }
 
-.events__icon.events__icon--location {
-    color: var(--primary);
+.events__location-icon {
+    margin-right: 8px;
 }
 
 .events__body {
+    flex-grow: 1;
     color: var(--muted-text);
+    margin-bottom: 24px;
 }
 
-.events__btn {
-    display: block;
-}
-
-
-
-.events__date {
-    background-color: var(--primary);
-    color: white;
-    font-weight: 700;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 64px;
-    height: 64px;
-    font-family: 'Overpass', sans-serif;
-    font-size: 1.2rem;
-}
 
 /* blog */
 
@@ -311,16 +336,19 @@ em {
     color: var(--text);
 }
 
-.news__link, .news__all {
+.news__link,
+.news__all {
     font-weight: bold;
     color: var(--primary);
+    text-align: end;
+    margin: 16px 0;
 }
 
 .news__meta {
     margin-bottom: 8px;
 }
 
-.news__item > * {
+.news__item>* {
     margin-bottom: 16px;
 }
 
