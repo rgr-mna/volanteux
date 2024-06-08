@@ -11,208 +11,224 @@
 
 <body>
     <header class="navbar">
+        <button class="navbar__toggle"><img class="dashicons navbar__toggle-icon" src="./assets/menu.svg" alt="Menu"></button>
         <div class="navbar__brand">
-
+            <img src="./assets/logoipsum-317.svg" alt="Logo">
         </div>
         <nav class="navbar__nav">
-            <a href="#" class="navbar__nav-item active">Accueil</a>
-            <a href="#" class="navbar__nav-item">Coaching</a>
+            <a href="#" class="navbar__nav-item navbar__nav-item--active">Accueil</a>
+            <a href="#" class="navbar__nav-item navbar__nav-item--dropdown">Coaching <img class="dashicons"
+                    src="./assets/arrow-down-alt2.svg" alt="Dropdown"></a>
             <a href="#" class="navbar__nav-item">Inscription</a>
             <a href="#" class="navbar__nav-item">Compétition</a>
-            <a href="#" class="navbar__nav-item collapsible">Infos pratiques</a>
+            <a href="#" class="navbar__nav-item navbar__nav-item--collapsible">Infos pratiques</a>
         </nav>
         <div class="navbar__socials">
+            <img class="navbar__socials--facebook dashicons" src="./assets/facebook-alt.svg" alt="Facebook">
+            <img class="navbar__socials--twitter dashicons" src="./assets/twitter.svg" alt="Twitter">
         </div>
     </header>
-    <section class="hero">
-        <div class="hero__content">
-            <div class="hero__side">
-                <svg>
-                    <svg width="593" height="668" viewBox="0 0 593 668" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="0.68"
-                            d="M276.171 54.5227C336.799 -2.71976 375.334 -12.0787 433.457 16.3336C554.691 75.5928 557.177 271.188 580.094 388.269C597.789 478.696 609.505 587.812 518.816 643.661C416.779 706.527 262.702 638.118 244.846 521.896C232.054 438.543 214.878 420.561 126.025 397.496C27.3067 371.872 -6.59202 336.175 1.6576 266.529C8.15872 211.515 49.4936 175.309 98.7498 157.145C210.506 115.929 212.132 114.994 276.171 54.5227Z"
-                            fill="#426BFA" />
+    <div class="overlay"></div>
+    <main class="main-content">
+        <section class="hero">
+            <div class="hero__content">
+                <div class="hero__side">
+                    <svg>
+                        <svg width="593" height="668" viewBox="0 0 593 668" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.68"
+                                d="M276.171 54.5227C336.799 -2.71976 375.334 -12.0787 433.457 16.3336C554.691 75.5928 557.177 271.188 580.094 388.269C597.789 478.696 609.505 587.812 518.816 643.661C416.779 706.527 262.702 638.118 244.846 521.896C232.054 438.543 214.878 420.561 126.025 397.496C27.3067 371.872 -6.59202 336.175 1.6576 266.529C8.15872 211.515 49.4936 175.309 98.7498 157.145C210.506 115.929 212.132 114.994 276.171 54.5227Z"
+                                fill="#426BFA" />
+                        </svg>
                     </svg>
-                </svg>
-            </div>
-            <div class="hero__side">
-                <h1>Club de badminton à Andenne pour <em>adultes</em> et <em>jeunes</em>
-                </h1>
-                <p>Découvrez le badminton dans notre club convivial pour toute la famille. Rejoignez nous pour des
-                    parties en <em>jeu libre</em>, en <em>compétition</em> ou pour suivre nos <em>séances de
-                        coaching</em></p>
-                <div class="hero__side__cta">
-                    <button class="btn">
-                        Jouer avec les adultes
-                        <span class="dashicons dashicons-arrow-right-alt" aria-hidden="true"></span>
-                    </button>
-                    <button class="btn">
-                        Jouer avec les adultes
-                        <span class="dashicons dashicons-arrow-right-alt" aria-hidden="true"></span>
-                    </button>
+                </div>
+                <div class="hero__side">
+                    <h1>Club de badminton à Andenne pour <em>adultes</em> et <em>jeunes</em>
+                    </h1>
+                    <p>Découvrez le badminton dans notre club convivial pour toute la famille. Rejoignez nous pour des
+                        parties en <em>jeu libre</em>, en <em>compétition</em> ou pour suivre nos <em>séances de
+                            coaching</em></p>
+                    <div class="hero__side__cta">
+                        <button class="btn">
+                            Jouer avec les adultes
+                            <span class="dashicons dashicons-arrow-right-alt" aria-hidden="true"></span>
+                        </button>
+                        <button class="btn">
+                            Jouer avec les adultes
+                            <span class="dashicons dashicons-arrow-right-alt" aria-hidden="true"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="ribbon">
-        <p class="ribbon__headline">On joue ?
-            <br>la première séance est gratuite !
-        </p>
-        <p class="ribbon__subtext">Et notre assurance vous couvre, comme ça vous pouvez tout donner dès la première
-            séance !</p>
+        </section>
+        <section class="ribbon">
+            <p class="ribbon__headline">On joue ?
+                <br>la première séance est gratuite !
+            </p>
+            <p class="ribbon__subtext">Et notre assurance vous couvre, comme ça vous pouvez tout donner dès la première
+                séance !</p>
 
-        <button class="btn btn-lg">
-            Je m'inscris
-            <span class="dashicons dashicons-arrow-right-alt" aria-hidden="true"></span>
-        </button>
-    </section>
-    <section class="values">
-        <p class="section__intro">Nos valeurs</p>
-        <h2 class="section__title">Pour que chacun puisse s’épanouir et cela dans les meilleures conditions</h2>
-        <article class="values__item">
-            <div class="values__icon"></div>
-            <div class="values__body">
-                <header class="values__header">Un lieu sûr</header>
-                <p class="values__content">Le club organise régulièrement des activités pour les membres mais aussi pour
-                    leurs proches.</p>
-            </div>
-        </article>
-        <article class="values__item">
-            <div class="values__icon"></div>
-            <div class="values__body">
-                <header class="values__header">Un lieu sûr</header>
-                <p class="values__content">Le club organise régulièrement des activités pour les membres mais aussi pour
-                    leurs proches.</p>
-            </div>
-        </article>
-        <article class="values__item">
-            <div class="values__icon"></div>
-            <div class="values__body">
-                <header class="values__header">Un lieu sûr</header>
-                <p class="values__content">Le club organise régulièrement des activités pour les membres mais aussi pour
-                    leurs proches.</p>
-            </div>
-        </article>
-        <article class="values__item">
-            <div class="values__icon"></div>
-            <div class="values__body">
-                <header class="values__header">Un lieu sûr</header>
-                <p class="values__content">Le club organise régulièrement des activités pour les membres mais aussi pour
-                    leurs proches.</p>
-            </div>
-        </article>
-        <article class="values__item">
-            <div class="values__icon"></div>
-            <div class="values__body">
-                <header class="values__header">Un lieu sûr</header>
-                <p class="values__content">Le club organise régulièrement des activités pour les membres mais aussi pour
-                    leurs proches.</p>
-            </div>
-        </article>
-    </section>
-    <section class="find-us">
-        <p class="section__intro">Où nous trouver</p>
-        <h2 class="section__title">Nos salles d’entrainements et compétition</h2>
-        <div class="find-us__container">
-            <div class="find-us__locations find-us__locations--left">
-                <article class="find-us__location-item">
-                    <header class="find-us__location-header">Andenne</header>
-                    <p class="find-us__location-name">Complexe sportif de Seilles</p>
-                    <p class="find-us__location-address">Rue Ferdinand Hendschel 40, 5300 Andenne</p>
-                    <p class="find-us__location-schedule">Tout les <em>lundi</em> de <em>19h30</em> à <em>22h30</em></p>
-                </article>
-                <article class="find-us__location-item">
-                    <header class="find-us__location-header">Andenne</header>
-                    <p class="find-us__location-name">Complexe sportif de Seilles</p>
-                    <p class="find-us__location-address">Rue Ferdinand Hendschel 40, 5300 Andenne</p>
-                    <p class="find-us__location-schedule">Tout les <em>lundi</em> de <em>19h30</em> à <em>22h30</em></p>
-                </article>
-            </div>
-            <div class="find-us__locations find-us__locations--right">
-                <div class="find-us__map"></div>
-            </div>
-        </div>
-    </section>
-    <section class="">
-        <p class="section__intro">Vie du club</p>
-        <h2 class="section__title">Événements et séances organisés par le club</h2>
-        <div class="events">
-            <article class="events__item">
-                <div class="events__date">
-                    <div class="events__date-digit" id="event-date-digit">24</div>
-                    <div class="events__date-month" id="event-date-month">Mai</div>
+            <button class="btn btn-lg">
+                Je m'inscris
+                <span class="dashicons dashicons-arrow-right-alt" aria-hidden="true"></span>
+            </button>
+        </section>
+        <section class="values">
+            <p class="section__intro">Nos valeurs</p>
+            <h2 class="section__title">Pour que chacun puisse s’épanouir et cela dans les meilleures conditions</h2>
+            <article class="values__item">
+                <div class="values__icon"></div>
+                <div class="values__body">
+                    <header class="values__header">Un lieu sûr</header>
+                    <p class="values__content">Le club organise régulièrement des activités pour les membres mais aussi
+                        pour
+                        leurs proches.</p>
                 </div>
-                <div class="events__details">
-                    <header class="events__header">
-                        <p class="events__title">Tournoi de fin d’année</p>
-                        <div class="events__info">
-                            <p class="events__registration">Sur inscription</p>
-                            <div class="events__location">
-                                <span class="events__location-icon dashicons dashicons-location"></span>
-                                <p class="events__location-name">Complexe de Seilles</p>
+            </article>
+            <article class="values__item">
+                <div class="values__icon"></div>
+                <div class="values__body">
+                    <header class="values__header">Un lieu sûr</header>
+                    <p class="values__content">Le club organise régulièrement des activités pour les membres mais aussi
+                        pour
+                        leurs proches.</p>
+                </div>
+            </article>
+            <article class="values__item">
+                <div class="values__icon"></div>
+                <div class="values__body">
+                    <header class="values__header">Un lieu sûr</header>
+                    <p class="values__content">Le club organise régulièrement des activités pour les membres mais aussi
+                        pour
+                        leurs proches.</p>
+                </div>
+            </article>
+            <article class="values__item">
+                <div class="values__icon"></div>
+                <div class="values__body">
+                    <header class="values__header">Un lieu sûr</header>
+                    <p class="values__content">Le club organise régulièrement des activités pour les membres mais aussi
+                        pour
+                        leurs proches.</p>
+                </div>
+            </article>
+            <article class="values__item">
+                <div class="values__icon"></div>
+                <div class="values__body">
+                    <header class="values__header">Un lieu sûr</header>
+                    <p class="values__content">Le club organise régulièrement des activités pour les membres mais aussi
+                        pour
+                        leurs proches.</p>
+                </div>
+            </article>
+        </section>
+        <section class="find-us">
+            <p class="section__intro">Où nous trouver</p>
+            <h2 class="section__title">Nos salles d’entrainements et compétition</h2>
+            <div class="find-us__container">
+                <div class="find-us__locations find-us__locations--left">
+                    <article class="find-us__location-item">
+                        <header class="find-us__location-header">Andenne</header>
+                        <p class="find-us__location-name">Complexe sportif de Seilles</p>
+                        <p class="find-us__location-address">Rue Ferdinand Hendschel 40, 5300 Andenne</p>
+                        <p class="find-us__location-schedule">Tout les <em>lundi</em> de <em>19h30</em> à <em>22h30</em>
+                        </p>
+                    </article>
+                    <article class="find-us__location-item">
+                        <header class="find-us__location-header">Andenne</header>
+                        <p class="find-us__location-name">Complexe sportif de Seilles</p>
+                        <p class="find-us__location-address">Rue Ferdinand Hendschel 40, 5300 Andenne</p>
+                        <p class="find-us__location-schedule">Tout les <em>lundi</em> de <em>19h30</em> à <em>22h30</em>
+                        </p>
+                    </article>
+                </div>
+                <div class="find-us__locations find-us__locations--right">
+                    <div class="find-us__map"></div>
+                </div>
+            </div>
+        </section>
+        <section class="">
+            <p class="section__intro">Vie du club</p>
+            <h2 class="section__title">Événements et séances organisés par le club</h2>
+            <div class="events">
+                <article class="events__item">
+                    <div class="events__date">
+                        <div class="events__date-digit" id="event-date-digit">24</div>
+                        <div class="events__date-month" id="event-date-month">Mai</div>
+                    </div>
+                    <div class="events__details">
+                        <header class="events__header">
+                            <p class="events__title">Tournoi de fin d’année</p>
+                            <div class="events__info">
+                                <p class="events__registration">Sur inscription</p>
+                                <div class="events__location">
+                                    <span class="events__location-icon dashicons dashicons-location"></span>
+                                    <p class="events__location-name">Complexe de Seilles</p>
+                                </div>
                             </div>
+                        </header>
+                        <div class="events__body">
+                            <p>In the eighteenth century the German philosopher Immanuel Kant developed a theory of
+                                knowledge in wh</p>
                         </div>
-                    </header>
-                    <div class="events__body">
-                        <p>In the eighteenth century the German philosopher Immanuel Kant developed a theory of
-                            knowledge in wh</p>
+                        <button class="btn">
+                            En savoir plus
+                            <span class="dashicons dashicons-arrow-right-alt" aria-hidden="true"></span>
+                        </button>
                     </div>
-                    <button class="btn">
-                        En savoir plus
-                        <span class="dashicons dashicons-arrow-right-alt" aria-hidden="true"></span>
-                    </button>
-                </div>
-            </article>
-            <article class="events__item">
-                <div class="events__date">
-                    <div class="events__date-digit" id="event-date-digit">24</div>
-                    <div class="events__date-month" id="event-date-month">Mai</div>
-                </div>
-                <div class="events__details">
-                    <header class="events__header">
-                        <p class="events__title">Tournoi de fin d’année</p>
-                        <div class="events__info">
-                            <p class="events__registration">Sur inscription</p>
-                            <div class="events__location">
-                                <span class="events__location-icon dashicons dashicons-location"></span>
-                                <p class="events__location-name">Complexe de Seilles</p>
+                </article>
+                <article class="events__item">
+                    <div class="events__date">
+                        <div class="events__date-digit" id="event-date-digit">24</div>
+                        <div class="events__date-month" id="event-date-month">Mai</div>
+                    </div>
+                    <div class="events__details">
+                        <header class="events__header">
+                            <p class="events__title">Tournoi de fin d’année</p>
+                            <div class="events__info">
+                                <p class="events__registration">Sur inscription</p>
+                                <div class="events__location">
+                                    <span class="events__location-icon dashicons dashicons-location"></span>
+                                    <p class="events__location-name">Complexe de Seilles</p>
+                                </div>
                             </div>
+                        </header>
+                        <div class="events__body">
+                            <p>In the eighteenth century the German philosopher Immanuel Kant developed a theory of
+                                knowledge in wh</p>
                         </div>
+                        <button class="btn">
+                            En savoir plus
+                            <span class="dashicons dashicons-arrow-right-alt" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </article>
+            </div>
+            <h2 class="section__title">Nos dernières actus</h2>
+            <div class="news">
+                <article class="news__item">
+                    <header class="news__header">
+                        <div class="news__meta">
+                            <div class="news__category">PV Réunions /</div>
+                            <div class="news__date">15.02.2024 18:32</div>
+                        </div>
+                        <p class="news__title">PV réunion de 15/02/2024</p>
                     </header>
-                    <div class="events__body">
-                        <p>In the eighteenth century the German philosopher Immanuel Kant developed a theory of
-                            knowledge in wh</p>
+                    <div class="news__body">
+                        <p>On a eu plusieurs problèmes avec les salles et le matériel de badminton récemment. </p>
                     </div>
-                    <button class="btn">
-                        En savoir plus
-                        <span class="dashicons dashicons-arrow-right-alt" aria-hidden="true"></span>
-                    </button>
-                </div>
-            </article>
-        </div>
-        <h2 class="section__title">Nos dernières actus</h2>
-        <div class="news">
-            <article class="news__item">
-                <header class="news__header">
-                    <div class="news__meta">
-                        <div class="news__category">PV Réunions /</div>
-                        <div class="news__date">15.02.2024 18:32</div>
-                    </div>
-                    <p class="news__title">PV réunion de 15/02/2024</p>
-                </header>
-                <div class="news__body">
-                    <p>On a eu plusieurs problèmes avec les salles et le matériel de badminton récemment. </p>
-                </div>
-                <a href="#" class="news__link">Lire l’article...</a>
-            </article>
-            <p class="news__all">Voir tous les articles</p>
-        </div>
+                    <a href="#" class="news__link">Lire l’article...</a>
+                </article>
+                <p class="news__all">Voir tous les articles</p>
+            </div>
 
-    </section>
+        </section>
+    </main>
     <footer>
         <img class="footer-logo src="" alt="">
         <p class=" footer-rights">© Les Volanteux, Webmestre Tony G | Thème par Roger M </p>
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>
