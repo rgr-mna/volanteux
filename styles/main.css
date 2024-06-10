@@ -265,10 +265,6 @@ em {
     text-align: center;
 }
 
-.hero__ {
-    display: block;
-}
-
 .hero__image-wrapper {
     order: -1;
     width: 50%;
