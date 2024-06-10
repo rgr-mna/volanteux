@@ -251,19 +251,43 @@ em {
 
 /* hero */
 
-.hero__content> :nth-child(1) {
-    display: none;
-}
-
-.hero__content .hero__side>* {
-    margin-bottom: 38px;
-}
-
-.hero__side__cta {
+.hero {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+.hero > * {
+    margin-bottom: 24px;
+}
+
+.hero__title {
+    text-align: center;
+}
+
+.hero__image-wrapper {
+    order: -1;
+    width: 50%;
+}
+
+.hero__title {
+    order: -2;
+    margin-bottom: 38px;
+}
+
+.hero__description {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.hero__cta {
+    order: -1;
+}
+
+.hero__cta > .btn {
+    margin-bottom: 8px;
+}
+
 
 
 /* ribbon cta */
