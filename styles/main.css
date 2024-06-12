@@ -238,10 +238,33 @@ em {
     letter-spacing: 0.08rem;
 }
 
-.navbar__nav-item--dropdown {
+.navbar__dropdown-title {
     display: flex;
     align-items: center;
 }
+
+.navbar__dropdown-items {
+    display: none; /* Hide dropdown items by default */
+}
+
+.navbar__dropdown--active .navbar__dropdown-items {
+    display: flex; /* Show dropdown items when active */
+    flex-direction: column;
+}
+
+.navbar__dropdown img {
+    transition: transform 0.3s ease; /* Corrected to apply transition to the transform property */
+    margin-left: 4px;
+}
+
+.navbar__dropdown--active img {
+    transform: rotate(-90deg);
+}
+
+.navbar__dropdown-item {
+    margin-bottom: 8px;
+}
+
 
 .navbar__nav-item--dropdown img {
     margin-left: 8px;

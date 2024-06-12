@@ -17,12 +17,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    
-
-    
     overlay.addEventListener('click', function() {
         navMenu.classList.remove('navbar__nav--visible');
         overlay.classList.remove('overlay--visible');
         mainContent.classList.remove('main-content--shifted');
+    });
+
+    document.querySelectorAll('.navbar__dropdown-title').forEach(title => {
+        title.addEventListener('click', function(e) {
+            e.preventDefault();
+            const dropdown = this.parentElement;
+            dropdown.classList.toggle('navbar__dropdown--active');
+        });
     });
 });
