@@ -171,6 +171,14 @@ em {
     opacity: 1;
 }
 
+/* Media query for larger screens */
+@media screen and (min-width: 1280px) {
+    section {
+        padding: 64px 128px;
+
+    }
+}
+
 
 /* nav */
 .navbar {
@@ -335,21 +343,13 @@ em {
 
     .navbar__dropdown-items {
         display: none;
-        /* Hide dropdown items by default */
         position: absolute;
-        /* Add this */
         top: 100%;
-        /* Position below the dropdown title */
         left: 0;
-        /* Align to the left of the dropdown title */
         background-color: var(--white);
-        /* Match the background color */
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-        /* Add shadow for visibility */
         z-index: 10;
-        /* Ensure it appears above other elements */
         min-width: 150px;
-        /* Set a fixed width, adjust as necessary */
     }
 
     .navbar__dropdown-item.navbar__nav-item {
@@ -374,25 +374,23 @@ em {
     .navbar__nav-item--active::after {
         content: "";
         display: block;
-        width: 100%; /* Full width of the navbar item */
-        height: 4px; /* Height of the red bar */
-        background-color: var(--red); /* Red color for the bar */
+        width: 100%; 
+        height: 4px; 
+        background-color: var(--red); 
         position: absolute;
-        bottom: -4px; /* Adjust as necessary to position the bar below the item */
+        bottom: -4px; 
         left: 0;
         bottom: -16px;
     }
 
     .navbar__dropdown:hover .navbar__dropdown-items {
         display: flex;
-        /* Show dropdown items on hover */
         flex-direction: column;
         position: absolute;
     }
 
     .navbar__dropdown:hover img {
         transition: transform 0.3s ease;
-        /* Corrected to apply transition to the transform property */
         transform: rotate(-90deg);
     }
 
@@ -442,6 +440,60 @@ em {
 
 .hero__cta>.btn {
     margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1280px) {
+    .hero__title, .hero__image-wrapper, .hero__cta {
+        order: initial;
+    }
+
+    .hero {
+        /* Additional styles for larger screens */
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+        margin-top: 3.2rem;
+        /* max-width: 80%; */
+        /* margin: auto; */
+        justify-content: center;
+    }
+
+    .hero__side {
+    }
+    
+    .hero__content {
+        margin-left: 3.2rem;
+        max-width: 30%;
+    }
+    
+    .hero__description {
+        text-align: left;
+        font-size: 1.2rem;
+        margin-bottom: 3.2rem;
+    }
+
+    .hero__title {
+        text-align: initial;
+        font-size: 2.8rem;
+        margin-bottom: 3.2rem;
+        margin-top: 2.8rem;
+        font-weight: 900;
+        max-width: 16ch;
+    }
+
+    .hero__cta {
+        display: flex;
+    }
+
+    .hero__cta .btn:nth-child(1) {
+        margin-right: 2rem;
+    }
+
+    .hero__side {
+        /* Additional styles for larger screens */
+        /* flex: 1; */
+    }
 }
 
 
@@ -670,25 +722,3 @@ em {
 
 
 
-/* Media query for larger screens */
-@media screen and (min-width: 768px) {
-    .hero {
-        /* Additional styles for larger screens */
-        display: flex;
-    }
-
-    .hero__content {
-        /* Additional styles for larger screens */
-        flex: 1;
-    }
-
-    .hero__side {
-        /* Additional styles for larger screens */
-        flex: 1;
-    }
-
-    .section {
-        padding: 64px 128px;
-
-    }
-}
