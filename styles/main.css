@@ -511,7 +511,7 @@ em {
 }
 
 .ribbon__headline {
-    font-size: 28px;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 28px;
     letter-spacing: -0.05em;
@@ -532,6 +532,26 @@ em {
     bottom: 0;
     transform: translateX(-50%) translateY(50%);
     border: solid 4px var(--bg-color);
+}
+
+@media screen and (min-width: 1280px) {
+    .ribbon {
+        padding: 52px 12px;
+    }
+    .ribbon__headline {
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+    }
+
+    .ribbon__subtext {
+        font-size: 1.2rem;
+    }
+
+    .ribbon .btn {
+        font-size: 1.8rem;
+    border: solid 8px var(--bg-color);
+
+    }
 }
 
 /* values items */
